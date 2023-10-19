@@ -3,7 +3,7 @@ import Button from "./Button";
 
 const PlanCard = ({ img, accountType, price, storage, users, maxData }) => {
   return (
-    <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300">
+    <div className="w-full shadow-xl flex flex-col p-4 my-4 rounded-lg md:hover:scale-105 duration-300">
       <img className="w-20 mx-auto mt-[-3rem] bg-white" src={img} alt="/" />
       <h2 className="text-2xl font-bold text-center py-8">{accountType}</h2>
       <p className="text-center font-bold text-4xl">${price}</p>

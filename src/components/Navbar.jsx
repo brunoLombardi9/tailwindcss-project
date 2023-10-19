@@ -24,11 +24,9 @@ const Navbar = () => {
       </div>
 
       <div
-        className={
-          nav
-            ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-gray-900 bg-[#000300] ease-in-out duration-500"
-            : "fixed md:hidden left-[-100%] "
-        }
+        className={`ease-in-out duration-500
+        fixed md:hidden h-full border-r w-[60%] border-gray-900 bg-[#000300]
+          ${nav ? "left-0 top-0 " : "left-[-100%] "}`}
       >
         <ul className=" uppercase">
           {navOptions.map((option) => (
